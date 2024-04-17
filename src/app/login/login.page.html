@@ -1,0 +1,33 @@
+<ion-header >
+  <ion-toolbar color="medium">
+    <ion-button slot="end" color="success" fill="clear" routerLink="/register">SIGN UP</ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true"  color="medium">
+  <div id="header" class="ion-text-center">
+    <div class="image-container">
+      <ion-icon slot="start" name="person" style=" font-size: 10rem;" color="success"></ion-icon>
+    </div>
+  </div>
+
+  <form>
+    
+    <ion-card-content class="custom-card-content">
+      <ion-item class=" custom-item">
+        <ion-icon slot="start" name="person" color="medium"></ion-icon>
+        <ion-input placeholder="Username" expand="full" ></ion-input>
+      </ion-item>    
+    
+      <ion-item class=" custom-item">
+        <ion-icon slot="start" name="lock-closed" color="medium"></ion-icon>
+        <ion-input type="Password" placeholder="Password" expand="full" > </ion-input>
+        <a [routerLink]="['/resetpassword']" class="forgot-password-link" > Forgot Password?</a>
+      </ion-item>
+      
+        <ion-button expand="full" class="buttonS" class=" custom-item" color="success">Sign In</ion-button> 
+       
+     
+    </ion-card-content>
+  </form>
+  
+</ion-content>
