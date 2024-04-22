@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'resetpassword',
     loadChildren: () => import('./resetpassword/resetpassword.module').then( m => m.ResetpasswordPageModule)
   },
+  {
+    path: 'list-produit',
+    loadChildren: () => import('./list-produit/list-produit.module').then( m => m.ListProduitPageModule)
+  },
 
 
 ];
