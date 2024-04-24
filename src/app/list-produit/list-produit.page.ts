@@ -13,6 +13,14 @@ export class ListProduitPage implements OnInit {
       placeholder: 'Name',
     },
     {
+      type: 'text area',
+      placeholder: 'Description',
+    },
+    {
+      type: 'number',
+      placeholder: 'Price',
+    },
+    {
       placeholder: 'Nickname (max 8 characters)',
       attribute: {
         maxlength: 8,
@@ -21,15 +29,22 @@ export class ListProduitPage implements OnInit {
 
     {
       type: 'number',
-      placeholder: 'Age',
-      min: 1,
-      max: 100,
+      placeholder: 'Stock disponible',
     },
     {
-      type: 'textarea',
-      placeholder: 'A little about yourself',
+      placeholder: 'Categorie',
     },
 
+    {
+      type: 'number',
+      placeholoder: 'Weight',
+    },
+
+    {
+      placeholder: 'couleur',
+    },
+
+    
   ];
   
 
