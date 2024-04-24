@@ -3,3 +3,40 @@
 ion-item {
   --padding-start: 0;
 }
+
+.icon{
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+.logo-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px; /* Ajustez la valeur de la marge selon vos besoins */
+}
+.text-center{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.about-section {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
