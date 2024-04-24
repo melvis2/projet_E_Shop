@@ -87,9 +87,15 @@
      
      
       
-      <ion-button  expand="block" class="buttonS" class="custom-button"> <ion-icon name="add-outline" slot="start"></ion-icon> Ajouter un produit</ion-button> 
+      <ion-button  expand="block" id="present-alert"  class="buttonS" class="custom-button"> <ion-icon name="add-outline" slot="start"></ion-icon> Ajouter un produit</ion-button> 
      
+      <ion-alert
+  trigger="present-alert"
+  header="Ajouter un produit"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs">
 
+</ion-alert>
       
 
     </ion-list>
