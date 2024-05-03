@@ -14,26 +14,27 @@
     </div>
   </div>
 
-  <form>
+  <form [formGroup]="regForm" novalidate>
     
     <ion-card-content class="custom-card-content">
       <ion-item class=" custom-item">
-        <ion-input placeholder="Your Name" expand="full" ></ion-input>
+        <ion-input formControlName="fullname" placeholder="Your Name" expand="full" ></ion-input>
         <ion-icon slot="start" name="person" color="medium"></ion-icon>
       </ion-item>
-    
+
+      
       <ion-item class=" custom-item">
-        <ion-input placeholder="Email" expand="full" > </ion-input>
+        <ion-input  formControlName="email" placeholder="Email" expand="full" > </ion-input>
         <ion-icon name="mail-outline" slot="start" color="medium"></ion-icon>
       </ion-item>
 
       <ion-item class=" custom-item">
-        <ion-input  placeholder="Numero Telephone" expand="full" > </ion-input>
+        <ion-input  formControlName="telephone" placeholder="Numero Telephone" expand="full" > </ion-input>
         <ion-icon name="call-outline" slot="start" color="medium"></ion-icon>
       </ion-item>
 
       <ion-item class=" custom-item">
-        <ion-input type="Password" placeholder="Password" expand="full" > </ion-input>
+        <ion-input type="Password"  formControlName="password" placeholder="Password" expand="full" > </ion-input>
         <ion-icon slot="start" name="lock-closed" color="medium"></ion-icon>
       </ion-item>
     

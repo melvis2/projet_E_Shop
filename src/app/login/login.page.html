@@ -13,17 +13,17 @@
     </div>
   </div>
 
-  <form>
+  <form [formGroup]="loginForm">
     
     <ion-card-content class="custom-card-content">
       <ion-item class=" custom-item">
         <ion-icon slot="start" name="person" color="medium"></ion-icon>
-        <ion-input placeholder="Username" expand="full" ></ion-input>
+        <ion-input formControlName="email" placeholder="Username" expand="full" ></ion-input>
       </ion-item>    
     
       <ion-item class=" custom-item">
         <ion-icon slot="start" name="lock-closed" color="medium"></ion-icon>
-        <ion-input type="Password" placeholder="Password" expand="full" > </ion-input>
+        <ion-input type="Password" formControlName="password" placeholder="Password" expand="full" > </ion-input>
         <a [routerLink]="['/resetpassword']" class="forgot-password-link" > Forgot Password?</a>
       </ion-item>
       
