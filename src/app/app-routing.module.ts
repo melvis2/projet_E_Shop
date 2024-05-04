@@ -11,10 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
+ /* {
     path: 'enregistrer-produit',
     loadChildren: () => import('./enregistrer-produit/enregistrer-produit.module').then( m => m.EnregistrerProduitPageModule)
-  },
+  },*/
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
